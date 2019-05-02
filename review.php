@@ -23,8 +23,8 @@
       </ul>
     </header>
     <div class="container centered">  <!-- Class used to center our content-->
-      <div class="review">  
-        <div class="title">Review an UMD iSchool Class</div>
+      <div class="page">  
+        <div class="title">Review a UMD iSchool Class</div>
         <form>
           Class Title:
           <select name="class">
@@ -41,7 +41,7 @@
             // Check connection
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
-            } 
+            }
 
 
             $query="SELECT class FROM classes";
