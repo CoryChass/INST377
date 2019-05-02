@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Team Peer Evaluation</title>
+	<style>
+		* {box-sizing: border-box}
+
+		/* Add padding to containers */
+		.container {
+		  padding: 16px;
+		  font-family: Helvetica, Arial, sans-serif;
+		}
+
+		/* Full-width input fields */
+		input[type=name], input[type=time], textarea, select, .submit {
+		  width: 100%;
+		  padding: 15px;
+		  margin: 5px 0 22px 0;
+		  /*display: inline-block;*/
+		  border: none;
+		  background: #f1f1f1;
+		}
+
+		input:focus, textarea:focus {
+		  background-color: #ddd;
+		  outline: none;
+		}
+
+		.form-radio
+		{
+		     -webkit-appearance: none;
+		     -moz-appearance: none;
+		     appearance: none;
+		     display: inline-block;
+		     position: relative;
+		     background-color: #f1f1f1;
+		     color: #666;
+		     top: 10px;
+		     height: 30px;
+		     width: 30px;
+		     border: 0;
+		     border-radius: 50px;
+		     cursor: pointer;     
+		     margin-right: 7px;
+		     outline: none;
+		}
+		.form-radio:checked::before
+		{
+		     position: absolute;
+		     font: 13px/1 'Open Sans', sans-serif;
+		     left: 11px;
+		     top: 7px;
+		     content: '\02143';
+		     transform: rotate(40deg);
+		}
+		.form-radio:hover
+		{
+		     background-color: #ddd;
+		}
+		.form-radio:checked
+		{
+		     background-color: #ddd;
+		}
+
+
+		/* Overwrite default styles of hr */
+		hr {
+		  border: 1px solid #f1f1f1;
+		  margin-bottom: 25px;
+		}
+
+		/* Set a style for the submit/register button */
+		.submitbtn {
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 16px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  cursor: pointer;
+		  width: 100%;
+		  opacity: 0.9;
+		}
+
+		.submitbtn:hover {
+		  opacity:1;
+		}
+
+		/* Add a blue text color to links */
+		a {
+		  color: dodgerblue;
+		}
+
+	</style>
+
+<script>
+function validateForm() {
+  var is_valid = true; //Start with assumptuon that it is valid
+  var team_name = document.forms["form"]["team_name"].value;
+  if (team_name == "") {
+    alert("Name must be filled out");
+    is_valid = false;
+    
+    console.log(validateForm) //Checks to see if function is called   
+    return is_valid; 
+  }
+}
+</script>
+
+</head>
+<body>
+	<!-- Create Your Form Below -->
+	<div class="container">
+		<form name="form" method="post" onsubmit="return validateForm()" action="form_processor.php">
+			<label for="name"><b>Class name to be added:</b></label>
+	    	<input type="name" name="class" placeholder="Class name">
+			<input class="submit" type="submit" value="Submit">
+		</form>
+	</div>
+
+</body>
+</html>
