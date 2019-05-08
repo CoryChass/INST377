@@ -15,13 +15,12 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
       <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
-      <!-- Bootstrap Framework -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   </head>
   <body>
     <div id="logo"><img class="logo" src="img/iSchool_logo.jpg"></div>
     
-    <header class="masthead">
+    <header class="masthead_custom">
       <div class="centered"><h1 class="site-title">iSchool Class Reviews</h1></div>
       <ul class="navbar_custom">
         <a class="active" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
@@ -32,85 +31,84 @@
     
     <div class="container_custom centered">  <!-- Class used to center our content-->
       <div class="page">
-        <div class="title">Review an UMD iSchool Class</div>
-        <form action="">
-          Class Title:
-          <select name="class" id='dropdown-menu'>
-            <?php include "conn.php"; //DB login 
-            // Create connection
-            $conn = new mysqli($servername, $username, $password, $dbname);
-            // Check connection
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
-
-
-            $query="SELECT class_id FROM classes ORDER BY class_id ASC";
-            $result = $conn -> query($query);
-
-             while($row = $result->fetch_assoc()) {
-              echo "<option class='dropdown-item' id=".$row["class_id"]."><a> INST".$row["class_id"]."</a></option>";
-          }
-
-            $conn->close();
-
-            ?>
-          </select>
-          <br>
-          Class Rating:
-          <div class="rating">
-            <span class="fa fa-fw fa-star checked"></span>
-            <span class="fa fa-fw fa-star checked"></span>
-            <span class="fa fa-fw fa-star checked"></span>
-            <span class="fa fa-fw fa-star"></span>
-            <span class="fa fa-fw fa-star"></span>
+        <div class="title">Review an UMD iSchool Class</div><hr>
+        <form method="post">
+          <div class="form-group ">
+            <label class="statement" for="review_form">Class Title</label>
+            <select class="select form-control" id="select" name="select">
+             <?php include "get_classes.php"?> <!-- Jumps to PHP file to use SQL to grab classes -->
+            </select>
           </div>
+          <div class="form-group ">
+            <label class="statement" for="select">Class Rating</label>
+            <div class="rate">
+              <input type="radio" id="star5" name="rate" value="5" />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="text">1 star</label>
+            </div>
+          </div>
+          <div class="form-group ">
+            <label class="statement" for="select">Would you take this class again?</label>
+            <input type="radio" class="form-radio" name="would_take_again" value="1"> Yes
+            <input type="radio" class="form-radio" name="would_take_again" value="0"> No
+          </div>
+          <div class="form-group ">
+            <label class="statement" for="select">Level of Difficulty</label>
+            <ul class='likert'>
+                <li>
+                  <input type="radio" name="difficulty_level" value="1">
+                  <label>No Effort</label>
+                </li>
+                <li>
+                  <input type="radio" name="difficulty_level" value="2">
+                  <label>Easy (<1 hour homework/week)</label>
+                </li>
+                <li>
+                  <input type="radio" name="difficulty_level" value="3">
+                  <label>Neutral</label>
+                </li>
+                <li>
+                  <input type="radio" name="difficulty_level" value="4">
+                  <label>Hard (>3 hours homework/week)</label>
+                </li>
+                <li>
+                  <input type="radio" name="difficulty_level" value="5">
+                  <label>Impossible</label>
+                </li>
+              </ul>
+            </div>
+            <div class="form-group ">
+              <label class="statement" for="select">Textbook used</label>
+              <input type="radio" class="form-radio" name="would_take_again" value="1"> Yes
+            <input type="radio" class="form-radio" name="would_take_again" value="0"> No
+            </div>
+            <div class="form-group ">
+              <label class="statement" for="select">Grade received</label>
+              <select name="memGrade1" >
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="C-">C-</option>
+                <option value="F">F</option>
+              </select>
+            </div>
 
-          Would you take this class again?
-          <br>
-          <input type="radio" name="yesno" value="yes"> Yes<br>
-          <input type="radio" name="yesno" value="no"> No<br>
-
-          <label class="statement">Level of Difficulty:</label>
-          <ul class='likert'>
-            <li>
-              <input type="radio" name="likert" value="strong_agree">
-              <label>Low Effort</label>
-            </li>
-            <li>
-              <input type="radio" name="likert" value="strong_agree">
-              <label>Neutral</label>
-            </li>
-            <li>
-              <input type="radio" name="likert" value="strong_agree">
-              <label>Difficult</label>
-            </li>
-          </ul>
-
-          Textbook use
-          <br>
-          <input type="radio" name="yesno" value="yes"> Yes<br>
-          <input type="radio" name="yesno" value="no"> No<br>
-          Grade received
-          <select name="memGrade1" >
-            <option value="A+">A+</option>
-            <option value="A">A</option>
-            <option value="A-">A-</option>
-            <option value="B+">B+</option>
-            <option value="B">B</option>
-            <option value="B-">B-</option>
-            <option value="C+">C+</option>
-            <option value="C">C</option>
-            <option value="C-">C-</option>
-            <option value="F">F</option>
-          </select>
-          <br>
-
-          <button type="submit">Submit</button>
+          <div class="form-group">
+             <button class="submitbtn" name="submit" type="submit">Submit Review</button>
+           </div>
         </form>
-
-
-
       </div>
     </div>
   </body>

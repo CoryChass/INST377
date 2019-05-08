@@ -15,13 +15,12 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
       <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
-      <!-- Bootstrap Framework -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   </head>
   <body>
     <div id="logo"><img class="logo" src="img/iSchool_logo.jpg"></div>
     
-    <header class="masthead">
+    <header class="masthead_custom">
       <div class="centered"><h1 class="site-title">iSchool Class Reviews</h1></div>
       <ul class="navbar_custom">
         <a class="active" href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>

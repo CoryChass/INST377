@@ -24,7 +24,7 @@ h2 {
   display: none;
 }
 
-.masthead {
+.masthead_custom {
     background: #e74c3c;
     box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
     margin-bottom: 10px;
@@ -158,68 +158,134 @@ h2 {
   color: orange;
 }
 
-button {
-  background-color: #adadad;
-  color: white;
-  font-size: 1em;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 30%;
-}
-
-button:hover {
-  background-color: #e74c3c;
-}
-
 .txt-center {
   text-align: center;
 }
+
 .hide {
   display: none;
 }
 
-.clear {
-  float: none;
-  clear: both;
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
 }
 
-.rating {
-    width: 90px;
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    text-align: center;
-    position: relative;
+
+.form-group {
+  display: block;
 }
 
-.rating > label {
-    float: right;
-    display: inline;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    width: 1.1em;
-    cursor: pointer;
-    color: #000;
-}
 
-.rating > label:hover,
-.rating > label:hover ~ label,
-.rating > input.radio-btn:checked ~ label {
-    color: transparent;
-}
+/* Full-width input fields */
+    input[type=name], input[type=time], textarea, select, .submit {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      /*display: inline-block;*/
+      border: none;
+      background: #f1f1f1;
+    }
 
-.rating > label:hover:before,
-.rating > label:hover ~ label:before,
-.rating > input.radio-btn:checked ~ label:before,
-.rating > input.radio-btn:checked ~ label:before {
-    content: "\2605";
-    position: absolute;
-    left: 0;
-    color: #FFD700;
-}
+    input:focus, textarea:focus {
+      background-color: #ddd;
+      outline: none;
+    }
 
+    .form-radio
+    {
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         appearance: none;
+         display: inline-block;
+         position: relative;
+         background-color: #f1f1f1;
+         color: #666;
+         top: 10px;
+         height: 30px;
+         width: 30px;
+         border: 0;
+         border-radius: 50px;
+         cursor: pointer;     
+         margin-right: 7px;
+         outline: none;
+    }
+    .form-radio:checked::before
+    {
+         position: absolute;
+         font: 13px/1 'Open Sans', sans-serif;
+         left: 11px;
+         top: 7px;
+         content: '\02143';
+         transform: rotate(40deg);
+    }
+    .form-radio:hover
+    {
+         background-color: #ddd;
+    }
+    .form-radio:checked
+    {
+         background-color: #ddd;
+    }
+
+
+    /* Overwrite default styles of hr */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    /* Set a style for the submit/register button */
+    .submitbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .submitbtn:hover {
+      opacity:1;
+    }
+
+    /* Add a blue text color to links */
+    a {
+      color: dodgerblue;
+    }
 
 form .statement {
   display:block;
@@ -228,6 +294,8 @@ form .statement {
   padding: 30px 0 0 4.25%;
   margin-bottom:10px;
 }
+
+
 form .likert {
   list-style:none;
   width:100%;
@@ -280,11 +348,11 @@ form .buttons .submit:hover {background-color: #14892c;}
 
 
 @media screen and (max-width: 600px) {
-    .logo {
+  .logo {
     min-width: 100%;
   }
 
-  .container {
+  .container_custom {
     width: 100%;
   }
 
