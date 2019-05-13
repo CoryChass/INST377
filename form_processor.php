@@ -1,29 +1,30 @@
 <?php
 
-$servername = "localhost";
-$username = 'corychas_377';
-$password = 'INST377INST377';
-$dbname = 'corychas_377';
+include "conn.php"; 
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+
+/* Variables that need to be set... */
+$class_id = $_POST['class_id'];
+$class_rating = $_POST['class_rating'];
+$would_take_again = $_POST['would_take_again'];
+$difficulty_level = $_POST['difficulty_level'];
+$textbook_use =  $_POST['textbook_use'];
+$grade_received = $_POST['grade_received'];
+
+$sql = <<<SAVESQL
+INSERT INTO reviews
+  (class_id, class_rating, would_take_again, difficulty_level, textbook_use, grade_received)
+  VALUES ('$class_id', '$class_rating', '$would_take_again', '$difficulty_level', '$textbook_use', '$grade_received');
+
+SAVESQL;
+if ($conn->query($sql)) {
+  $last_id = $conn->insert_id;
+  echo "New record created successfully. Last inserted ID is: $last_id.";
 } 
 
-$class = htmlentities($_POST['class']);
-
-
-$sql="INSERT INTO classes (id, class, description) VALUES (null, '".$class."', 'Coming Soon')";
-
-if ($conn->query($sql) === TRUE) {
-    echo $class . "<br><h1>New record created successfully</h1>";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+else {
+  echo "Error: $conn->error<br /><pre>$sql</pre><br />";
 }
 
 $conn->close();
-
-
-?>
+ ?>

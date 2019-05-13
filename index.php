@@ -15,6 +15,8 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
       <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
+      <script src="/js/review_output.js"></script>
+
 
   </head>
   <body>
@@ -39,37 +41,58 @@
         $query="SELECT class_id, class_description FROM classes ORDER BY class_id ASC";
         $result = $conn -> query($query);
         while($row = $result->fetch_assoc()) {
-          echo "<li id=".$row["class_id"]."><a href='#'> INST".$row["class_id"]."<span class='class_description_list single-line'>".$row["class_description"]."</span></a></li><div id='review_output'>";}
+          echo "<li id=".$row["class_id"]."><a href='#'> INST".$row["class_id"]."<span class='class_description_list single-line'>".$row["class_description"]."</span></a></li>";}
         $conn->close();?>  
-      </ul> 
+      </ul>
+      <div id='review_output'></div> 
     </div>
     </div> 
   
-      <script>
-      
+    <script>
+      function search() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+     
       $(document).ready(function(){ 
-        //This script is to make our search box 'autocomplete'
-        function search() {
-          var input, filter, ul, li, a, i, txtValue;
-          input = document.getElementById("myInput");
-          filter = input.value.toUpperCase();
-          ul = document.getElementById("myUL");
-          li = ul.getElementsByTagName("li");
-          for (i = 0; i < li.length; i++) {
-              a = li[i].getElementsByTagName("a")[0];
-              txtValue = a.textContent || a.innerText;
-              if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                  li[i].style.display = "";
-              } else {
-                  li[i].style.display = "none";
-              }}}       
+      $('li').click(function(){
+        $('li').not(this).toggle();
+        $("ul li span").toggleClass('single-line').toggleClass('class_description_active');
+      });
+      
+      $( "ul#myUL li" ).click(function(str) {
+      	var xhttp; 
+      	if (str == "") {
+      		document.getElementById("txtHint").innerHTML = "";
+      		return;
+      	}
+      	xhttp = new XMLHttpRequest();
+      	xhttp.onreadystatechange = function() {
+      		if (this.readyState == 4 && this.status == 200) {
+      			document.getElementById("review_output").innerHTML = this.responseText;
+      		}
+      	};
+      	xhttp.open("GET", "output.php?q="+str, true);
+      	xhttp.send();	
 
-        $('li').click(function(){
-          $('li').not(this).toggle();
-          $("ul li span").toggleClass('single-line').toggleClass('class_description_active');
-        });
-
-        });
+      });
+      
+      });
       </script>
 
 

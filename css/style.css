@@ -207,89 +207,88 @@ h2 {
   display: block;
 }
 
+.form-indent {
+  padding-left: 35px;
+}
+
 
 /* Full-width input fields */
-    input[type=name], input[type=time], textarea, select, .submit {
-      width: 100%;
-      padding: 15px;
-      margin: 5px 0 22px 0;
-      /*display: inline-block;*/
-      border: none;
-      background: #f1f1f1;
-    }
+input[type=name], input[type=time], textarea, select, .submit {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  /*display: inline-block;*/
+  border: none;
+  background: #f1f1f1;
+}
 
-    input:focus, textarea:focus {
-      background-color: #ddd;
-      outline: none;
-    }
+input:focus, textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
 
-    .form-radio
-    {
-         -webkit-appearance: none;
-         -moz-appearance: none;
-         appearance: none;
-         display: inline-block;
-         position: relative;
-         background-color: #f1f1f1;
-         color: #666;
-         top: 10px;
-         height: 30px;
-         width: 30px;
-         border: 0;
-         border-radius: 50px;
-         cursor: pointer;     
-         margin-right: 7px;
-         outline: none;
-    }
-    .form-radio:checked::before
-    {
-         position: absolute;
-         font: 13px/1 'Open Sans', sans-serif;
-         left: 11px;
-         top: 7px;
-         content: '\02143';
-         transform: rotate(40deg);
-    }
-    .form-radio:hover
-    {
-         background-color: #ddd;
-    }
-    .form-radio:checked
-    {
-         background-color: #ddd;
-    }
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #ddd;
+}
+.form-radio:checked
+{
+     background-color: #ddd;
+}
 
 
-    /* Overwrite default styles of hr */
-    hr {
-      border: 1px solid #f1f1f1;
-      margin-bottom: 25px;
-    }
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
 
-    /* Set a style for the submit/register button */
-    .submitbtn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 16px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      opacity: 0.9;
-    }
+/* Set a style for the submit/register button */
+.submitbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
 
-    .submitbtn:hover {
-      opacity:1;
-    }
+.submitbtn:hover {
+  opacity:1;
+}
 
-    /* Add a blue text color to links */
-    a {
-      color: dodgerblue;
-    }
 
 form .statement {
   display:block;
-  font-size: 14px;
   font-weight: bold;
   padding: 30px 0 0 4.25%;
   margin-bottom:10px;

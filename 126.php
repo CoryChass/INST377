@@ -29,20 +29,17 @@
         </ul>
     </header>
       <div class="container_custom centered">  <!-- Class used to center our content-->
-        <div class="search">
-          <div class="page">
-            <div class="title">About</div><hr>
-              The iSchool Class Reviewer is a group project for INST377. It is aimed to allow students to fill out a
-              form review about a class they have taken in the iSchool. It then collects the different student opinions
-              about specific classes in the iSchool and publicly posts the reviews under class's page. We believe having a
-              page like this is beneficial so that a student who will take the class has accurate information about the
-              content of the class, and helps them determine whether or not it is a class they want to enroll in, and
-              what they can look forward to based on other people's previous experiences in the class.
+        <div id='avg_review'></div>
+        
+        <?php include "conn.php"; //DB login   
+        $query="SELECT class_id, AVG(class_rating) FROM reviews";
+        $result = $conn -> query($query);
+        $row = mysqli_fetch_array($result);
+        echo($row[1]);
+        $conn->close();?>
 
-              <br><br>
-              The members of our group are Cory Chassagne, Peter Dziejma, Hien (Shayla) Nguyen, Elisha (Elli) Ugot, and Aroun Deen-Gassama.
-          </div>
-        </div>
+  
+
       </div>
   </body>
 </html>

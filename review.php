@@ -32,66 +32,69 @@
     <div class="container_custom centered">  <!-- Class used to center our content-->
       <div class="page">
         <div class="title">Review an UMD iSchool Class</div><hr>
-        <form method="post">
+        <form action="form_processor.php" method="post">
           <div class="form-group ">
             <label class="statement" for="review_form">Class Title</label>
-            <select class="select form-control" id="select" name="select">
+            <select class="select form-control" id="select" name="class_id">
              <?php include "get_classes.php"?> <!-- Jumps to PHP file to use SQL to grab classes -->
             </select>
           </div>
-          <div class="form-group ">
+          <div class="form-group">
             <label class="statement" for="select">Class Rating</label>
-            <div class="rate">
-              <input type="radio" id="star5" name="rate" value="5" />
+            <div class="rate form-indent">
+              <input type="radio" id="star5" name="class_rating" value="5" />
               <label for="star5" title="text">5 stars</label>
-              <input type="radio" id="star4" name="rate" value="4" />
+              <input type="radio" id="star4" name="class_rating" value="4" />
               <label for="star4" title="text">4 stars</label>
-              <input type="radio" id="star3" name="rate" value="3" />
+              <input type="radio" id="star3" name="class_rating" value="3" />
               <label for="star3" title="text">3 stars</label>
-              <input type="radio" id="star2" name="rate" value="2" />
+              <input type="radio" id="star2" name="class_rating" value="2" />
               <label for="star2" title="text">2 stars</label>
-              <input type="radio" id="star1" name="rate" value="1" />
+              <input type="radio" id="star1" name="class_rating" value="1" />
               <label for="star1" title="text">1 star</label>
             </div>
           </div>
-          <div class="form-group ">
+          <div class="form-group"><br>
             <label class="statement" for="select">Would you take this class again?</label>
-            <input type="radio" class="form-radio" name="would_take_again" value="1"> Yes
-            <input type="radio" class="form-radio" name="would_take_again" value="0"> No
+            <div class="form-indent">
+              <input type="radio" class="form-radio" name="would_take_again" value="1"> Yes
+              <input type="radio" class="form-radio" name="would_take_again" value="0"> No
+            </div>
           </div>
-          <div class="form-group ">
+          <div class="form-group">
             <label class="statement" for="select">Level of Difficulty</label>
             <ul class='likert'>
                 <li>
-                  <input type="radio" name="difficulty_level" value="1">
+                  <input type="radio" name="difficulty_level" class="form-radio" value="1">
                   <label>No Effort</label>
                 </li>
                 <li>
-                  <input type="radio" name="difficulty_level" value="2">
+                  <input type="radio" name="difficulty_level" class="form-radio" value="2">
                   <label>Easy (<1 hour homework/week)</label>
                 </li>
                 <li>
-                  <input type="radio" name="difficulty_level" value="3">
+                  <input type="radio" name="difficulty_level" class="form-radio" value="3">
                   <label>Neutral</label>
                 </li>
                 <li>
-                  <input type="radio" name="difficulty_level" value="4">
+                  <input type="radio" name="difficulty_level" class="form-radio" value="4">
                   <label>Hard (>3 hours homework/week)</label>
                 </li>
                 <li>
-                  <input type="radio" name="difficulty_level" value="5">
+                  <input type="radio" name="difficulty_level" class="form-radio" value="5">
                   <label>Impossible</label>
                 </li>
               </ul>
             </div>
-            <div class="form-group ">
+            <div class="form-group">
               <label class="statement" for="select">Textbook used</label>
-              <input type="radio" class="form-radio" name="would_take_again" value="1"> Yes
-            <input type="radio" class="form-radio" name="would_take_again" value="0"> No
-            </div>
-            <div class="form-group ">
+              <div class="form-indent">
+                <input type="radio" class="form-radio" name="textbook_use" value="1"> Yes
+                <input type="radio" class="form-radio" name="textbook_use" value="0"> No
+              </div>
+            <div class="form-group">
               <label class="statement" for="select">Grade received</label>
-              <select name="memGrade1" >
+              <select name="grade_received" >
                 <option value="A+">A+</option>
                 <option value="A">A</option>
                 <option value="A-">A-</option>
@@ -105,8 +108,16 @@
               </select>
             </div>
 
-          <div class="form-group">
-             <button class="submitbtn" name="submit" type="submit">Submit Review</button>
+
+          <button class="submitbtn" name="submit" type="submit">Submit Review</button>
+          <!-- <div class="form-group">
+          <script type="text/javascript">
+          $( "form" ).on( "submit", function( event ) {
+            event.preventDefault();
+            console.log( $( this ).serialize() );
+          }); </script>
+          <button class="submitbtn" name="submit" type="submit">Submit Review</button>
+          </script> Script for jQuery Form--> 
            </div>
         </form>
       </div>

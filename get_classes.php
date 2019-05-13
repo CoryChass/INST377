@@ -13,7 +13,7 @@
   $result = $conn -> query($query);
 
   while($row = $result->fetch_assoc()) {
-    echo "<option class='dropdown-item' id=".$row["class_id"]."><a> INST".$row["class_id"]."</a></option>";}
+    echo "<option class='dropdown-item' value='".$row["class_id"]."'><a> INST".$row["class_id"]."</a></option>";}
 
   //Close connection
   $conn->close();
