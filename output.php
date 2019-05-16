@@ -1,16 +1,33 @@
 <?php include "conn.php"; //DB login   
-$query="SELECT class_id, AVG(class_rating) FROM reviews WHERE class_id = $";
 
-if (!$result) {
-    die('Invalid query: ' . mysql_error());
+if($conn->connect_error) {
+  exit('Could not connect');
 }
-$stmt = $mysqli->prepare($sql);
-$stmt->bind_param("s", $_GET['q']);
-$stmt->execute();
-$stmt->store_result();
-$stmt->bind_result($selected_class);
-$stmt->fetch();
-$stmt->close();
 
+$class_selected = $_GET['q'];
+
+$query = "SELECT classes.class_id, class_name, AVG(class_rating) AS avg_rating FROM reviews 
+JOIN classes ON classes.class_id = reviews.class_id
+WHERE classes.class_id = $class_selected";
+
+
+$result = $conn -> query($query);
+
+$row = $result -> fetch_assoc();
+
+
+if ($row["avg_rating"] == NULL) {
+	echo "<h2>No Reviews... yet</h2>";
+	echo "<div class='centered'><button class='add_review_btn' name='submit' type='submit'>Submit Review</button></div>";
+} else {
+	echo "<h2>Reviews for:".$row["class_name"]."</h2>";
+
+	echo $row["avg_rating"];
+}
+
+#var_dump($result);
+
+//Close connection
+$conn->close();
 
 ?>

@@ -712,3 +712,125 @@
 [13-May-2019 11:04:25 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/corychas/public_html/INST377/output.php on line 4
 [13-May-2019 11:05:04 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/corychas/public_html/INST377/output.php on line 4
 [13-May-2019 11:06:05 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home2/corychas/public_html/INST377/output.php on line 5
+[14-May-2019 22:34:34 America/Chicago] PHP Fatal error:  Call to a member function prepare() on a non-object in /home2/corychas/public_html/INST377/output.php on line 9
+[14-May-2019 22:34:50 America/Chicago] PHP Fatal error:  Call to undefined function prepare() in /home2/corychas/public_html/INST377/output.php on line 9
+[14-May-2019 22:34:53 America/Chicago] PHP Fatal error:  Call to undefined function prepare() in /home2/corychas/public_html/INST377/output.php on line 9
+[14-May-2019 22:35:18 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 10
+[14-May-2019 22:35:20 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 10
+[14-May-2019 22:36:32 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 12
+[14-May-2019 22:39:13 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 12
+[14-May-2019 22:39:14 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 12
+[14-May-2019 22:39:14 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 12
+[14-May-2019 22:39:40 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 12
+[14-May-2019 22:40:34 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 12
+[14-May-2019 22:40:37 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 12
+[14-May-2019 22:41:43 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 10
+[14-May-2019 22:41:43 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 10
+[14-May-2019 22:43:42 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 10
+[14-May-2019 22:43:45 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 10
+[14-May-2019 22:44:47 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 10
+[14-May-2019 22:45:39 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 10
+[14-May-2019 22:45:40 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 10
+[14-May-2019 22:45:41 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 10
+[14-May-2019 22:46:44 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home2/corychas/public_html/INST377/index.php on line 42
+[14-May-2019 22:50:56 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home2/corychas/public_html/INST377/output.php on line 10
+[14-May-2019 22:51:16 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 11
+[14-May-2019 23:23:26 America/Chicago] PHP Parse error:  syntax error, unexpected '=' in /home2/corychas/public_html/INST377/output.php on line 7
+[15-May-2019 10:34:11 America/Chicago] PHP Parse error:  syntax error, unexpected '"', expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home2/corychas/public_html/INST377/index.php on line 53
+[15-May-2019 10:38:15 America/Chicago] PHP Parse error:  syntax error, unexpected 'output' (T_STRING), expecting ',' or ';' in /home2/corychas/public_html/INST377/index.php on line 53
+[15-May-2019 10:40:14 America/Chicago] PHP Parse error:  syntax error, unexpected '=' in /home2/corychas/public_html/INST377/index.php on line 53
+[15-May-2019 23:29:50 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:31:10 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:31:53 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:32:18 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:34:25 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:34:28 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:34:29 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:34:31 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:35:21 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:35:32 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:36:25 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:36:39 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:38:32 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:39:04 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:39:13 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:43:45 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:43:47 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:43:49 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home2/corychas/public_html/INST377/output.php on line 12
+[15-May-2019 23:44:17 America/Chicago] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 15
+[15-May-2019 23:45:39 America/Chicago] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE) in /home2/corychas/public_html/INST377/output.php on line 16
+[15-May-2019 23:47:58 America/Chicago] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 17
+[15-May-2019 23:54:00 America/Chicago] PHP Parse error:  syntax error, unexpected '$class_selected' (T_VARIABLE), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 13
+[16-May-2019 00:02:49 America/Chicago] PHP Parse error:  syntax error, unexpected ''</h2>";' (T_ENCAPSED_AND_WHITESPACE), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 13
+[16-May-2019 00:03:29 America/Chicago] PHP Parse error:  syntax error, unexpected ''</h2>";' (T_ENCAPSED_AND_WHITESPACE), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 13
+[16-May-2019 00:07:28 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home2/corychas/public_html/INST377/output.php on line 21
+[16-May-2019 00:07:44 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 14
+[16-May-2019 00:09:27 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/corychas/public_html/INST377/output.php on line 14
+[16-May-2019 00:09:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/corychas/public_html/INST377/output.php on line 14
+[16-May-2019 00:09:59 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 00:10:12 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 00:10:14 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 00:15:20 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 00:15:22 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 00:15:25 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 00:15:30 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 00:15:33 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 00:15:38 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 00:15:45 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:48:51 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:48:53 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:48:53 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:49:36 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:50:20 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:50:22 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:51:00 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:51:01 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:51:03 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:52:38 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:52:46 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:56:14 America/Chicago] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:56:21 America/Chicago] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:57:02 America/Chicago] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:57:05 America/Chicago] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:58:15 America/Chicago] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 13:58:18 America/Chicago] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 14:00:12 America/Chicago] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 14:05:02 America/Chicago] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 14:13:12 America/Chicago] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home2/corychas/public_html/INST377/output.php on line 15
+[16-May-2019 14:13:15 America/Chicago] PHP Warning:  mysqli_result::fetch_assoc() expects exactly 0 parameters, 1 given in /home2/corychas/public_html/INST377/output.php on line 17
+[16-May-2019 14:14:13 America/Chicago] PHP Warning:  mysqli_result::fetch_assoc() expects exactly 0 parameters, 1 given in /home2/corychas/public_html/INST377/output.php on line 17
+[16-May-2019 14:14:33 America/Chicago] PHP Warning:  mysqli_result::fetch_assoc() expects exactly 0 parameters, 1 given in /home2/corychas/public_html/INST377/output.php on line 17
+[16-May-2019 14:14:36 America/Chicago] PHP Warning:  mysqli_result::fetch_assoc() expects exactly 0 parameters, 1 given in /home2/corychas/public_html/INST377/output.php on line 17
+[16-May-2019 14:14:37 America/Chicago] PHP Warning:  mysqli_result::fetch_assoc() expects exactly 0 parameters, 1 given in /home2/corychas/public_html/INST377/output.php on line 17
+[16-May-2019 14:14:41 America/Chicago] PHP Warning:  mysqli_result::fetch_assoc() expects exactly 0 parameters, 1 given in /home2/corychas/public_html/INST377/output.php on line 17
+[16-May-2019 14:14:51 America/Chicago] PHP Warning:  mysqli_result::fetch_assoc() expects exactly 0 parameters, 1 given in /home2/corychas/public_html/INST377/output.php on line 17
+[16-May-2019 14:14:52 America/Chicago] PHP Warning:  mysqli_result::fetch_assoc() expects exactly 0 parameters, 1 given in /home2/corychas/public_html/INST377/output.php on line 17
+[16-May-2019 14:15:39 America/Chicago] PHP Warning:  mysqli_result::fetch_assoc() expects exactly 0 parameters, 1 given in /home2/corychas/public_html/INST377/output.php on line 17
+[16-May-2019 14:16:56 America/Chicago] PHP Warning:  mysqli_result::fetch_assoc() expects exactly 0 parameters, 1 given in /home2/corychas/public_html/INST377/output.php on line 17
+[16-May-2019 14:18:12 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home2/corychas/public_html/INST377/output.php on line 20
+[16-May-2019 14:18:58 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home2/corychas/public_html/INST377/output.php on line 20
+[16-May-2019 14:19:10 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home2/corychas/public_html/INST377/output.php on line 21
+[16-May-2019 14:19:52 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home2/corychas/public_html/INST377/output.php on line 18
+[16-May-2019 14:19:55 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home2/corychas/public_html/INST377/output.php on line 18
+[16-May-2019 14:19:56 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home2/corychas/public_html/INST377/output.php on line 18
+[16-May-2019 14:20:05 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home2/corychas/public_html/INST377/output.php on line 17
+[16-May-2019 14:20:53 America/Chicago] PHP Warning:  mysqli_result::fetch_assoc() expects exactly 0 parameters, 1 given in /home2/corychas/public_html/INST377/output.php on line 17
+[16-May-2019 14:21:44 America/Chicago] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE) in /home2/corychas/public_html/INST377/output.php on line 25
+[16-May-2019 14:24:19 America/Chicago] PHP Warning:  mysqli_result::fetch_assoc() expects exactly 0 parameters, 1 given in /home2/corychas/public_html/INST377/output.php on line 18
+[16-May-2019 14:25:52 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home2/corychas/public_html/INST377/output.php on line 20
+[16-May-2019 14:31:31 America/Chicago] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE) in /home2/corychas/public_html/INST377/output.php on line 27
+[16-May-2019 14:41:54 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 22
+[16-May-2019 14:41:56 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 22
+[16-May-2019 14:42:37 America/Chicago] PHP Parse error:  syntax error, unexpected 'reviews' (T_STRING), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 21
+[16-May-2019 14:43:09 America/Chicago] PHP Parse error:  syntax error, unexpected '">Submit one!</a></h3>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 21
+[16-May-2019 14:43:32 America/Chicago] PHP Parse error:  syntax error, unexpected '">Submit one!</a>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 21
+[16-May-2019 14:45:14 America/Chicago] PHP Parse error:  syntax error, unexpected 'https' (T_STRING), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 21
+[16-May-2019 14:50:26 America/Chicago] PHP Parse error:  syntax error, unexpected 'submitbtn' (T_STRING), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 21
+[16-May-2019 14:50:36 America/Chicago] PHP Parse error:  syntax error, unexpected 'submitbtn' (T_STRING), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 21
+[16-May-2019 14:51:15 America/Chicago] PHP Parse error:  syntax error, unexpected 'submitbtn' (T_STRING), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 20
+[16-May-2019 14:51:34 America/Chicago] PHP Parse error:  syntax error, unexpected 'submitbtn' (T_STRING), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 20
+[16-May-2019 14:51:56 America/Chicago] PHP Parse error:  syntax error, unexpected 'submitbtn' (T_STRING), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 20
+[16-May-2019 14:52:26 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 21
+[16-May-2019 14:52:28 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 21
+[16-May-2019 14:52:51 America/Chicago] PHP Parse error:  syntax error, unexpected 'submitbtn' (T_STRING), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 21
+[16-May-2019 14:52:55 America/Chicago] PHP Parse error:  syntax error, unexpected 'submitbtn' (T_STRING), expecting ',' or ';' in /home2/corychas/public_html/INST377/output.php on line 21
